@@ -1,5 +1,9 @@
 
 var urlFilters = [];
+setUrlFilters();
+
+// Register listener for when user updates url filters
+chrome.runtime.onMessage.addListener(setUrlFilters);
 
 // Update url filters
 function setUrlFilters() {
@@ -9,9 +13,6 @@ function setUrlFilters() {
         }
     });
 }
-
-// Register listener for when user updates url filters
-chrome.runtime.onMessage.addListener(setUrlFilters);
 
 // On each page visit, check if url is in one of the url filters
 chrome.history.onVisited.addListener((historyItem) => {
