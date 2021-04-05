@@ -1,0 +1,38 @@
+
+body {
+    font-family: "Arial";
+    font-size: 16px;
+    line-height: 1.5;
+    background: rgb(24, 28, 37);
+    color: white;
+}
+
+code {
+    background-color: black;
+    color: #dc3545;
+    border-radius: 0.3em;
+    white-space: nowrap;
+}
+
+button {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: white;
+    color: #28a745;
+    cursor: pointer;
+}
+
+.success {
+    font-size: 12px;
+    color: #28a745;
+}
